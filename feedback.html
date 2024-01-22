@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Responsive viewport settings for better display on various devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the webpage -->
+  <title>Feedback Form</title>
+
+  <!-- Linking an external stylesheet named "feedback.css" for styling -->
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+  <!-- Container for the feedback form -->
+  <div class="container">
+    <!-- Heading for the feedback form -->
+    <h1>Feedback Form</h1>
+
+    <!-- Form element with the id "feedbackForm" for user feedback -->
+    <form id="feedbackForm">
+      <!-- Label and input field for user's name, with 'required' attribute -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Label and input field for user's email, with 'required' attribute and type "email" -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Label and textarea for user's feedback, with 'required' attribute -->
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+      <!-- Button to submit the feedback form -->
+      <button type="submit">Submit Feedback</button>
+
+      <!-- Paragraph element with the id "feedbackMessage" for displaying feedback messages, styled with green color -->
+      <p id="feedbackMessage" style="color: green;"></p>
+    </form>
+  </div>
+
+  <!-- Linking an external JavaScript file named "feedback.js" for scripting -->
+  <script src="feedback.js"></script>
+</body>
+</html>
